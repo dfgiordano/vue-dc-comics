@@ -74,9 +74,10 @@ export default {
         padding: 0 10px;
         color: #4F4948;
     }
-    .active {
+    .active,
+    li > a:hover  {
+        padding-bottom: 46px;
         color: #2179E5;
         border-bottom: 5px solid #2179E5;
     }
-
 </style>

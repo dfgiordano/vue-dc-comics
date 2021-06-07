@@ -2,8 +2,8 @@
     <footer>
         <div class="background">
             <div class="container">
-
-        </div>
+                <div class="backg_logo"></div>
+            </div>
         </div>
         <div class="last_section">
             <div class="container">
@@ -12,31 +12,31 @@
                 </button>
                 <ul>
                     <li>
-                        <a href="#">FOLLOW US</a>
+                        <a href="#"><span>FOLLOW US </span></a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fab fa-facebook-f"></i>
+                            <img src="../assets/footer-facebook.png" alt="logo_facebook">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fab fa-twitter"></i>
+                            <img src="../assets/footer-twitter.png" alt="logo_twitter">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fab fa-youtube"></i>
+                            <img src="../assets/footer-youtube.png" alt="logo_youtube">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fab fa-pinterest"></i>
+                            <img src="../assets/footer-pinterest.png" alt="logo_pinterest">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <img src="../assets/footer-periscope.png" alt="logo_periscope">
                         </a>
                     </li>
                 </ul>
@@ -57,6 +57,13 @@ export default {
         background-image: url("../assets/footer-bg.jpg");
         background-repeat: repeat-x;
         height: calc(100vh - 490px);
+    }
+    .backg_logo {
+        background-image: url("../assets/dc-logo-bg.png");
+        height: 300px;
+        WIDTH: 100%;
+        background-repeat: no-repeat;
+        background-position: right;
     }
     .container {
         display: flex;
@@ -84,22 +91,24 @@ export default {
     ul {
         display: flex;
         align-self: center;
-        line-height: 100px;
     }
     li {
         list-style: none;
+        line-height: 97px;
+        align-self: center;
     }
-    li a {
-        margin: 0 15px;
-        text-decoration: none;
+    li span {
+        margin-right: 20px;
+        font-size: 20px;
+        font-weight: bold;
         color: #2179E5;
     }
-    a i {
+    li a {
+        text-decoration: none;
+    }
+    li img {
         height: 30px;
-        width: 30px;
-        padding: 10px;
-        color: #303030;
-        background-color: #797979;
-        border-radius : 50px;
+        vertical-align: middle;
+        padding: 0 7px;
     }
 </style>
