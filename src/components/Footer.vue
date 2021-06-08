@@ -4,44 +4,44 @@
             <div class="container">
                 <div class="vertical_list">
                     <ul>
-                        <li><h3>dc comics</h3></li>
-                        <li>Charachters</li>
-                        <li>Comics</li>
-                        <li>Movies</li>
-                        <li>Games</li>
-                        <li>Videos</li>
-                        <li>News</li>
+                        <li>
+                            <a href="#">
+                                <h3>dc comics</h3>
+                            </a>
+                        </li>
+                        <li v-for="(item,index) in comics" :key="index">
+                            <a :href="item.link">{{item.text}}</a>
+                        </li>
                     </ul>
                     <ul class="vertical_list">
-                        <li><h3>shop</h3></li>
-                        <li>Shop DC</li>
-                        <li>Shop Dc Collectibles</li>
+                        <li>
+                            <a href="">
+                                <h3>shop</h3>
+                            </a>
+                        </li>
+                       <li v-for="(item,index) in shop" :key="index">
+                            <a :href="item.link">{{item.text}}</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="vertical_list">
                     <ul>
-                        <li><h3>dc</h3></li>
-                        <li>Terms Of Use</li>
-                        <li>Privacy Policy (New)</li>
-                        <li>Ad Choices</li>
-                        <li>Advertising</li>
-                        <li>Jobs</li>
-                        <li>Subscriptions</li>
-                        <li>Talent Workshops</li>
-                        <li>CPSC Certificates</li>
-                        <li>Ratings</li>
-                        <li>Shop Help</li>
-                        <li>Contact Us</li>
+                        <li>
+                            <a href=""><h3>dc</h3></a>
+                        </li>
+                        <li v-for="(item,index) in dc" :key="index">
+                            <a :href="item.link">{{item.text}}</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="vertical_list">
                     <ul>
-                        <li><h3>sites</h3></li>
-                        <li>DC</li>
-                        <li>MAD Magazine</li>
-                        <li>DC Kids</li>
-                        <li>DC Universe</li>
-                        <li>DC Power Visa</li>
+                        <li>
+                            <a href="#"><h3>sites</h3></a>
+                        </li>
+                        <li v-for="(item,index) in sites" :key="index">
+                            <a :href="item.link">{{item.text}}</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="backg_logo"></div>
@@ -91,6 +91,118 @@
 <script>
 export default {
     name : "Footer",
+    data: function () {
+        return {
+            comics : [
+                {
+                    text:"Charachters",
+                    link:"#Charachters"
+                },
+                {
+                    text:"Comics",
+                    link:"#Comics"
+                },
+                {
+                    text:"Movies",
+                    link:"#Movies"
+                },
+                {
+                    text:"TV",
+                    link:"#TV"
+                },
+                {
+                    text:"Games",
+                    link:"#Games"
+                },
+                {
+                    text:"Videos",
+                    link:"#Videos"
+                },
+                {
+                    text:"News",
+                    link:"#News"
+                },
+            ],
+            shop: [
+                {
+                    text: "Shop DC",
+                    link: "#Shop_DC"
+                },
+                {
+                    text: "Shop Dc Collectibles",
+                    link: "#Shop_Dc_Collectibles"
+                }
+            ],
+            dc: [
+                {
+                    text: "Terms Of Use",
+                    link: "#Terms_Of_Use"
+                },
+                {
+                    text: "Privacy Policy (New)",
+                    link: "#Privacy_policy"
+                },
+                {
+                    text: "Ad Choices",
+                    link: "#ad_choices"
+                },
+                {
+                    text: "Advertising",
+                    link: "#advertising"
+                },
+                {
+                    text: "Jobs",
+                    link: "#jobs"
+                },
+                {
+                    text: "Subscriptions",
+                    link: "#subscriptions"
+                },
+                {
+                    text: "Talent Workshops",
+                    link: "#talent_workshops"
+                },
+                {
+                    text: "CPSC Certificates",
+                    link: "#CPSC_certificates"
+                },
+                {
+                    text: "Ratings",
+                    link: "#ratings"
+                },
+                {
+                    text: "Shop Help",
+                    link: "#shop_help"
+                },
+                {
+                    text: "Contact Us",
+                    link: "#contact_us"
+                },
+            ],
+            sites: [
+                {
+                    text: "DC",
+                    link: "#dc"
+                },
+                {
+                    text: "MAD Magazine",
+                    link: "#mad_magazine"
+                },
+                {
+                    text: "DC Kids",
+                    link: "#dc_kids"
+                },
+                {
+                    text: "DC Universe",
+                    link: "#dc_universe"
+                },
+                {
+                    text: "DC Power Visa",
+                    link: "#dc_power_visa"
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -168,6 +280,9 @@ export default {
         list-style: none;
         font-size: 12px;
         padding: 2px;
+    }
+    .vertical_list a {
+        text-decoration: none;
         color: #797979;
     }
     .vertical_list h3 {
