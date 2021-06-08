@@ -5,36 +5,9 @@
         </a> 
             <nav>
                 <ul>
-                    <li>
-                        <a href="#">characters</a>
+                    <li v-for="(item,index) in menu" :key="index">
+                        <a :href="item.link">{{item.text}}</a>
                     </li>
-                    <li>
-                        <a href="#" class="active">comics</a>
-                    </li>
-                    <li>
-                        <a href="#">movies</a>
-                    </li>
-                    <li>
-                        <a href="#">tv</a>
-                    </li>
-                    <li>
-                        <a href="#">games</a>
-                    </li>
-                    <li>
-                        <a href="#">collectibles</a>
-                    </li>
-                    <li>
-                        <a href="#">videos</a>
-                    </li>
-                    <li>
-                        <a href="#">fans</a>
-                    </li>
-                    <li>
-                        <a href="#">news</a>
-                    </li>
-                    <li>
-                        <a href="#">shop</a>
-                    </li>    
                 </ul>
             </nav>
     </header>
@@ -43,6 +16,63 @@
 <script>
 export default {
     name : "Header",
+    data: function () {
+        return {
+            menu: [
+                {
+                    text: "characters",
+                    link: "#characters",
+                    active: false,
+                },
+                {
+                    text: "comics",
+                    link: "#comics",
+                    active: true,
+                },
+                {
+                    text: "movies",
+                    link: "#movies",
+                    active: false,
+                },
+                {
+                    text: "tv",
+                    link: "#tv",
+                    active: false,
+                },
+                {
+                    text: "games",
+                    link: "#games",
+                    active: false,
+                },
+                {
+                    text: "collectibles",
+                    link: "#collectibles",
+                    active: false,
+                },
+                {
+                    text: "videos",
+                    link: "#videos",
+                    active: false,
+                },
+                {
+                    text: "fans",
+                    link: "#fans",
+                    active: false,
+                },
+                {
+                    text: "news",
+                    link: "#news",
+                    active: false,
+                },
+                {
+                    text: "shop",
+                    link: "#shop",
+                    active: false,
+                }
+
+            ]
+        }
+    }
 }
 </script>
 
@@ -71,6 +101,7 @@ export default {
         line-height: 120px;
         text-decoration: none;
         text-transform: uppercase;
+        font-weight: bold;
         padding: 0 10px;
         color: #4F4948;
     }
