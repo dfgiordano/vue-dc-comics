@@ -210,12 +210,11 @@ export default {
     .background {
         background-image: url("../assets/footer-bg.jpg");
         background-repeat: repeat-x;
-        height: calc(100vh - 490px);
-        /* height: 400px; */
+        height: 350px;
     }
     .backg_logo {
         background-image: url("../assets/dc-logo-bg.png");
-        height: 479px;
+        height: 350px;
         Width: 100%;
         background-repeat: no-repeat;
         background-position: right;
@@ -244,6 +243,9 @@ export default {
         border: 2px solid #2179E5;
         color: white;
     }
+    button:hover {
+        background-color: #2179E5;
+    }
     ul {
         display: flex;
     }
@@ -266,10 +268,13 @@ export default {
         vertical-align: middle;
         padding: 0 7px;
     }
+    .last_section img:hover {
+        opacity: 0.8;
+    }
     .vertical_list {
         display: flex;
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 20px;
         justify-content: flex-start;
     }
     .vertical_list > ul {
@@ -278,6 +283,7 @@ export default {
     }
     .vertical_list li {
         list-style: none;
+        font-weight: bold;
         font-size: 12px;
         padding: 2px;
     }
@@ -285,9 +291,12 @@ export default {
         text-decoration: none;
         color: #797979;
     }
+    .vertical_list a:hover {
+        color:#2179E5;
+    }
     .vertical_list h3 {
         font-size: 18px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         text-transform: uppercase;
         color: white;
     }
