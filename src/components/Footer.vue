@@ -264,7 +264,7 @@ export default {
         text-decoration: none;
     }
     .last_section li img {
-        height: 30px;
+        height: 40px;
         vertical-align: middle;
         padding: 0 7px;
     }

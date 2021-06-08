@@ -1,6 +1,9 @@
 <template>
   <main>
       <section class="section_up">
+          <button class="current">
+              current series
+          </button>
       </section>
       <section class="section_middle">
            <div class="container cover_cont"> 
@@ -107,30 +110,44 @@ export default {
 }      
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     .section_up {
         height: 400px;
         background-image: url("../assets/jumbotron.jpg");
+            .current {
+                height: 40px;
+                width: 215px;
+                border: none;
+                position: absolute;
+                left: 16%;
+                bottom: 15%;
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: bold;
+                color: white;
+                background-color: #2482F9;
+                cursor: pointer;
+                    &:hover {
+                        color:#2482F9;
+                        background-color: white;
+                    }
+            } 
     }
+    
     .container {
         max-width: 65%;
         margin: auto;
-    }
-    h1 {
-        line-height: 120px;
-        color: white;
-        font-size: 30px;
     }
     .section_down {
         height: 150px;
         background-color: #2482F9;
     }
     .section_middle {
+        height: 600px;
         background-color: #1C1C1C;
     }
     .cover_cont {
         display:flex;
         flex-wrap: wrap;
     }
-    
 </style>

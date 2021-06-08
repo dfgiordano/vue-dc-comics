@@ -1,5 +1,5 @@
 <template>
-  <div class="comics">
+    <div class="comics">
       <a href="#">
         <img :src="cover.thumb" :alt="cover.series">
       </a>
@@ -19,7 +19,7 @@ export default {
 <style scoped>
 .comics {
     width: calc(100% / 6);
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .comics img {
     height: 150px;
