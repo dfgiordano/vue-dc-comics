@@ -1,7 +1,6 @@
 <template>
   <main>
       <section class="section_up">
-         
       </section>
       <section class="section_middle">
            <div class="container cover_cont"> 
@@ -14,10 +13,8 @@
       </section>
       <section class="section_down">
             <div class="container">
-            
             </div>
         </section>
-      
   </main>
 </template>
 

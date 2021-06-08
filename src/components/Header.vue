@@ -80,7 +80,7 @@ export default {
     header {
         display: flex;
         justify-content: space-between;
-        height: 120px;
+        height: 80px;
         max-width: 70%;
         margin : auto;
     }
@@ -98,7 +98,7 @@ export default {
         list-style: none;
     }
     li > a {
-        line-height: 120px;
+        line-height: 80px;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: bold;
@@ -107,7 +107,7 @@ export default {
     }
     .active,
     li > a:hover  {
-        padding-bottom: 46px;
+        padding-bottom: 25px;
         color: #2179E5;
         border-bottom: 5px solid #2179E5;
     }

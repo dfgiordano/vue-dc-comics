@@ -1,7 +1,11 @@
 <template>
   <div class="comics">
-      <img :src="cover.thumb" :alt="cover.series">
-      <h6>{{ cover.series }}</h6>
+      <a href="#">
+        <img :src="cover.thumb" :alt="cover.series">
+      </a>
+      <a href="#">
+        <h6>{{ cover.series }}</h6>
+      </a>
   </div>
 </template>
 
@@ -18,13 +22,20 @@ export default {
     margin-top: 30px;
 }
 .comics img {
-    height: 120px;
-    width: 120px;
-    }
+    height: 150px;
+    width: 150px;
+}
+.comics h6:hover,
+.comics img:hover {
+    color: #2179E5;
+}
 h6 {
-    max-width: 120px;
+    max-width: 150px;
     text-transform: uppercase;
     margin: 10px 0;
     color: white;
+}
+.comics a {
+    text-decoration: none;
 }
 </style>
