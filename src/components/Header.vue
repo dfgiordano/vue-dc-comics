@@ -77,6 +77,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variables";
     header {
         display: flex;
         justify-content: space-between;
@@ -107,7 +108,7 @@ export default {
     }
     .active,
     li > a:hover  {
-        color: #2179E5;
-        border-bottom: 5px solid #2179E5;
+        color: $mainColor;
+        border-bottom: 5px solid $mainColor;
     }
 </style>

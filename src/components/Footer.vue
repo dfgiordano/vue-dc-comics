@@ -207,96 +207,98 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .background {
-        background-image: url("../assets/footer-bg.jpg");
-        background-repeat: repeat-x;
-        height: 350px;
-    }
-    .backg_logo {
-        background-image: url("../assets/dc-logo-bg.png");
-        height: 350px;
-        Width: 100%;
-        background-repeat: no-repeat;
-        background-position: right;
-    }
-    .container {
-        display: flex;
-        max-width: 70%;
-        margin: auto;
-    }
-    .last_section {
-        height: 100px;
-        background-color: #303030;
-            & .container {
-                display: flex;
-                justify-content: space-between;
+@import "../style/variables";
+
+.background {
+    background-image: url("../assets/footer-bg.jpg");
+    background-repeat: repeat-x;
+    height: 350px;
+}
+.backg_logo {
+    background-image: url("../assets/dc-logo-bg.png");
+    height: 350px;
+    Width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.container {
+    display: flex;
+    max-width: 70%;
+    margin: auto;
+}
+.last_section {
+    height: 100px;
+    background-color: #303030;
+        & .container {
+            display: flex;
+            justify-content: space-between;
+        }
+}
+button {
+    align-self: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #303030;
+    border: 2px solid $mainColor;
+    color: white;
+        &:hover{
+            background-color: $mainColor;
+        }
+}
+ul {
+    display: flex;
+}
+.last_section li {
+    list-style: none;
+    line-height: 97px;
+    align-self: center;
+        span {
+            margin-right: 20px;
+            font-size: 18px;
+            font-weight: 700;
+            color: $mainColor;
+        }
+        a {
+            text-decoration: none;
+        }
+        img {
+            height: 40px;
+            vertical-align: middle;
+            padding: 0 7px;
+        } &:hover {
+            opacity: 0.8;
+        }
+}
+.vertical_list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: flex-start;
+        ul {
+            flex-direction: column;
+            width: 140px;
+        }
+        li {
+            list-style: none;
+            font-weight: bold;
+            font-size: 12px;
+            padding: 2px;
+        }
+        a {
+            text-decoration: none;
+            color: #797979;
+            &:hover {
+                color:$mainColor;
             }
-    }
-    button {
-        align-self: center;
-        padding: 10px;
-        text-transform: uppercase;
-        font-size: 14px;
-        font-weight: 700;
-        cursor: pointer;
-        background-color: #303030;
-        border: 2px solid #2179E5;
-        color: white;
-            &:hover{
-                background-color: #2179E5;
-            }
-    }
-    ul {
-        display: flex;
-    }
-    .last_section li {
-        list-style: none;
-        line-height: 97px;
-        align-self: center;
-            span {
-                 margin-right: 20px;
-                font-size: 18px;
-                font-weight: 700;
-                color: #2179E5;
-            }
-            a {
-                text-decoration: none;
-            }
-            img {
-                height: 40px;
-                vertical-align: middle;
-                padding: 0 7px;
-            } &:hover {
-                opacity: 0.8;
-            }
-    }
-    .vertical_list {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        justify-content: flex-start;
-            ul {
-                flex-direction: column;
-                width: 140px;
-            }
-            li {
-                list-style: none;
-                font-weight: bold;
-                font-size: 12px;
-                padding: 2px;
-            }
-            a {
-                text-decoration: none;
-                color: #797979;
-            }
-            a:hover {
-                color:#2179E5;
-            }
-            h3 {
-                font-size: 18px;
-                margin-bottom: 10px;
-                text-transform: uppercase;
-                color: white;
-            }
-    }
+        }
+        h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: white;
+        }
+}
 </style>

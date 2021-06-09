@@ -114,6 +114,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variables";
     .section_up {
         height: 400px;
         background-image: url("../assets/jumbotron.jpg");
@@ -128,10 +129,10 @@ export default {
                 font-size: 18px;
                 font-weight: bold;
                 color: white;
-                background-color: #2482F9;
+                background-color: $mainColor;
                 cursor: pointer;
                     &:hover {
-                        color:#2482F9;
+                        color:$mainColor;
                         background-color: white;
                     }
             } 
@@ -142,7 +143,7 @@ export default {
 }
 .section_down {
     height: 150px;
-    background-color: #2482F9;
+    background-color: $mainColor;
 }
 .section_middle {
     height: 600px;
@@ -164,10 +165,10 @@ export default {
     font-size: 18px;
     font-weight: bold;
     color: white;
-    background-color: #2482F9;
+    background-color: $mainColor;
     cursor: pointer;
         &:hover {
-            color:#2482F9;
+            color:$mainColor;
             background-color: white;
             }
     }
