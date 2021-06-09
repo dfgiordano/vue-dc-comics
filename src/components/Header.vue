@@ -76,16 +76,16 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     header {
         display: flex;
         justify-content: space-between;
         height: 120px;
         max-width: 70%;
         margin : auto;
-    }
-    header > a {
-        display: flex;
+            & a {
+                display: flex;
+            }
     }
     img {
         height: 80%;
@@ -93,21 +93,20 @@ export default {
     }
     ul {
         display: flex;
-    }
-    ul > li {
-        list-style: none;
-    }
-    li > a {
-        line-height: 120px;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        padding: 0 10px;
-        color: #4F4948;
+            li {
+                list-style: none;
+            }
+                a {
+                    line-height: 115px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    padding: 0 10px;
+                    color: #4F4948;
+                }
     }
     .active,
     li > a:hover  {
-        padding-bottom: 46px;
         color: #2179E5;
         border-bottom: 5px solid #2179E5;
     }
