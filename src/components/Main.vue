@@ -18,8 +18,6 @@
           </button>
       </section>
       <section class="section_down">
-            <div class="container">
-            </div>
         </section>
   </main>
 </template>
